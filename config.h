@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -93,12 +93,9 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-<<<<<<< Updated upstream
-=======
 /* bg opacity */
-float alpha = 0.5;
+float alpha = 0.7;
 
->>>>>>> Stashed changes
 typedef struct {
 	const char* const colors[258]; /* terminal colors */
 	unsigned int fg;               /* foreground */

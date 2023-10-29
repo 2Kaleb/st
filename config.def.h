@@ -93,42 +93,6 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-<<<<<<< Updated upstream
-typedef struct {
-	const char* const colors[258]; /* terminal colors */
-	unsigned int fg;               /* foreground */
-	unsigned int bg;               /* background */
-	unsigned int cs;               /* cursor */
-	unsigned int rcs;              /* reverse cursor */
-} ColorScheme;
-/*
- * Terminal colors (16 first used in escape sequence,
- * 2 last for custom cursor color),
- * foreground, background, cursor, reverse cursor
- */
-static const ColorScheme schemes[] = {
-	// st (dark)
-	{{"black", "red3", "green3", "yellow3",
-	  "blue2", "magenta3", "cyan3", "gray90",
-	  "gray50", "red", "green", "yellow",
-	  "#5c5cff", "magenta", "cyan", "white",
-	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
-
-	// Alacritty (dark)
-	{{"#1d1f21", "#cc6666", "#b5bd68", "#f0c674",
-	  "#81a2be", "#b294bb", "#8abeb7", "#c5c8c6",
-	  "#666666", "#d54e53", "#b9ca4a", "#e7c547",
-	  "#7aa6da", "#c397d8", "#70c0b1", "#eaeaea",
-	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
-
-	// One Half dark
-	{{"#282c34", "#e06c75", "#98c379", "#e5c07b",
-	  "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
-	  "#282c34", "#e06c75", "#98c379", "#e5c07b",
-	  "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
-	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
-
-=======
 /* bg opacity */
 float alpha = 0.8;
 
@@ -166,7 +130,6 @@ static const ColorScheme schemes[] = {
 	  "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
 	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
 
->>>>>>> Stashed changes
 	// One Half light
 	{{"#fafafa", "#e45649", "#50a14f", "#c18401",
       "#0184bc", "#a626a4", "#0997b3", "#383a42",
@@ -265,7 +228,7 @@ static MouseShortcut mshortcuts[] = {
 };
 
 /* Internal keyboard shortcuts. */
-#define MODKEY Mod4Mask
+#define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
 static Shortcut shortcuts[] = {

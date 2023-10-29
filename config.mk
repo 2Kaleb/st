@@ -4,7 +4,7 @@ VERSION = 0.9
 # Customize below to fit your system
 
 # paths
-PREFIX = /home/kdebre/.local
+PREFIX = /home/kaleb/.local
 MANPREFIX = $(PREFIX)/share/man
 
 X11INC = /usr/X11R6/include
@@ -33,4 +33,4 @@ STLDFLAGS = $(LIBS) $(LDFLAGS)
 #MANPREFIX = ${PREFIX}/man
 
 # compiler and linker
-# CC = c99
+CC = gcc
